@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBG2FIS</title>
+
+  <!--Roboto font-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!--Boostrap stylesheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--Flaticon icons-->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <!--Boostrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <link href="style.css" rel="stylesheet">
+  <script type="module" src="main.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <ul class="nav fixed-top">
+
+      <li class="nav-item">
+        <a id="idNavMenu" class="nav-link" href="#">
+          <i class="fi fi-sr-calendar-lines"></i>
+          <small class="nav-text">Menú</small>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a id="idNavRecord" class="nav-link" href="#">
+          <i class="fi fi-sr-time-fast"></i>
+          <small class="nav-text">Registro</small>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+          <i class="fi fi-sr-wallet"></i>
+          <small class="nav-text">Cartera</small>
+        </a>
+        <ul class="dropdown-menu">
+          <li><small id="idResponsableBalance" class="dropdown-item">Saldo: $0</small></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a id="idNavOrders" class="nav-link" href="#">
+          <i class="fi fi-sr-shopping-cart"></i>
+          <small class="nav-text">Pedidos</small>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="idMenuSection" class="visible">
+      <h3>Menú:</h3>
+
+      <div id="idMenuContent" class="menu"></div>
+      <div id="idNoMenuInfo"></div>
+    </section>
+
+    <section id="idRecordSection" class="invisible">
+      <h3>Registro:</h3>
+
+      <div id="idRecordContent" class="record"></div>
+      <div id="idNoRecordInfo"></div>
+    </section>
+
+    <section id="idOrdersSection" class="invisible">
+      <h3>Pedidos:</h3>
+
+      <div id="idOrdersContent" class="orders"></div>
+      <p id="idCurrentOrderTotal" class="invisible"></p>
+      <div class="order-btns">
+        <button id="idBtnCancelOrder" class="invisible">Cancelar</button>
+        <button id="idBtnPayOrder" class="invisible">Pagar</button>
+      </div>
+
+      <div id="idNoOrderInfo"></div>
+    </section>
+
+    <section id="idOrderDayMealSection">
+    </section>
+
+  </main>
+</body>
+
+</html>

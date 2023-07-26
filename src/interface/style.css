@@ -1,0 +1,331 @@
+/* general */
+
+body {
+  font-family: 'Roboto';
+  background-color: #f8f8f8;
+}
+
+main {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 120px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-weight:600;
+  text-align: center;
+  color:#1B5E20;
+}
+
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.visible{
+  display: block;
+}
+
+.invisible{
+  display: none;
+}
+
+.no-data{
+  text-align: center;
+  color:#343434;
+}
+
+/* nav */
+
+.nav {
+  background-color: #f8f8f8;
+  justify-content: center;
+  box-shadow: 0px 2px 4px #10101059;
+}
+
+.nav-link {
+  color: #1B5E20;
+  font-size: 28px;
+  padding: 16px;
+  font-weight: 600;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-text {
+  display: block;
+  font-size: 10px;
+}
+
+.dropdown-menu {
+  background-color: #f8f8f8;
+  border-style: solid;
+  border-color: #0277BD;
+  border-width: 2px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px #10101059;
+}
+
+.dropdown-item {
+  color: #0277BD;
+  background-color: #f8f8f8;
+}
+
+.dropdown-item:hover {
+  color: #0277BD;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #0277BD;
+}
+
+/* menu */
+
+.menu{
+  margin: 20px;
+  color: #f8f8f8;
+}
+
+.day{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day-menu{
+  margin-bottom:12px;
+  padding: 20px;
+  background-color: #1B5E20;
+  border-style: none ;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px #10101059;
+}
+.day-menu:hover{
+  background-color: #19521d;
+  color: #f8f8f8;
+}
+
+.day-name{
+  font-size: x-large;
+}
+
+.date{
+  font-size: x-large;
+}
+
+.meal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-order-txt{
+  display: block;
+  border-top: #f8f8f8 solid 1px;
+  margin: 0px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+/* record */
+
+.record{
+  margin: 20px;
+  color: #f8f8f8;
+}
+
+.student-record{
+  margin-bottom:12px;
+  padding: 20px;
+  background-color: #1B5E20;
+  border-style: none ;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px #10101059;
+}
+
+.student-name{
+  font-size: x-large;
+}
+
+.record-order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-total{
+  display: block;
+  text-align: right;
+}
+
+/* orders */
+
+.orders{
+  color:#f8f8f8;
+  margin:20px;
+}
+
+.order-student-name{
+  margin: 0px;
+}
+.order{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders-text{
+  font-size: small;
+  margin: 0px;
+}
+.student-orders{
+  background-color: #1B5E20;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 4px #10101059;
+}
+
+.order-student-name{
+
+  text-align: right;
+  font-size: large;
+}
+
+.edit-order{
+  display: block;
+  font-size: large;
+  margin: 0px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.orders-total{
+  text-align: right;
+  color: #1B5E20;
+  margin-right: 20px;
+}
+
+.order-btns{
+text-align:center;
+}
+
+#idBtnCancelOrder{
+  color: #343434;
+  background-color: transparent;
+  border:#343434 solid 1px;
+  border-radius: 15px;
+  padding: 6px 12px 6px 12px;
+  margin-right: 12px;
+}
+
+#idBtnCancelOrder:hover{
+  background-color: #f8f8f8;
+  color: #cf0303;
+  border-color:#cf0303;
+}
+
+#idBtnPayOrder{
+  color: #f8f8f8;
+  background-color: #0277BD;
+  border:#0277BD solid 1px;
+  border-radius: 15px;
+  padding: 6px 32px 6px 32px;
+}
+
+#idBtnPayOrder:hover{
+  background-color: #f8f8f8;
+  color: #0277BD;
+}
+
+/* order meal */
+
+.day-meals{
+  margin: 20px;
+  color: #f8f8f8;
+  margin-bottom:12px;
+  padding: 20px;
+  background-color: #1B5E20;
+  border-style: none ;
+  border-radius: 15px;
+  box-shadow: 0px 2px 4px #10101059;
+}
+
+.day-meals:hover{
+  background-color: #19521d;
+  color: #f8f8f8;
+}
+.day-meal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-meal-name{
+  font-size: x-large;
+}
+
+.day-meal-price{
+  font-size: x-large;
+}
+
+.add-meal-btn-container{
+  display: flex;
+  justify-content: right;
+}
+
+.add-meal-to-orders{
+  color: #f8f8f8;
+  background-color: #0277BD;
+  border:#0277BD solid 1px;
+  border-radius: 15px;
+  padding: 6px 32px 6px 32px;
+
+}
+
+.add-meal-to-orders:hover{
+  background-color: #f8f8f8;
+  color: #0277BD;
+}
+
+/* responsive */
+
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 261px) {
+  main {
+    margin-top: 220px;
+  }
+}
+
+/*
+
+Colors palette:
+  GREEN #1B5E20;
+  BLUE: #0277BD, #005e94;
+  WHITE:#f8f8f8
+  DARK GRAY: #1c1c1c
+  RED: #cf0303
+  SHADOW: #10101059
+
+*/
